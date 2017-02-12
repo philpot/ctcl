@@ -1,0 +1,47 @@
+#!/bin/sh
+
+
+wget http://ctcl.org/agnes-scott-college
+wget http://ctcl.org/allegheny-college
+wget http://ctcl.org/antioch-college
+wget http://ctcl.org/austin-college
+wget http://ctcl.org/beloit-college
+wget http://ctcl.org/birmingham-southern-college
+wget http://ctcl.org/centre-college
+wget http://ctcl.org/clark-university
+wget http://ctcl.org/cornell-college
+wget http://ctcl.org/denison-university
+wget http://ctcl.org/earlham-college
+wget http://ctcl.org/eckerd-college
+wget http://ctcl.org/emory-henry-college
+wget http://ctcl.org/the-evergreen-state-college
+wget http://ctcl.org/goucher-college
+wget http://ctcl.org/guilford-college
+wget http://ctcl.org/hampshire-college
+wget http://ctcl.org/hendrix-college
+wget http://ctcl.org/hillsdale-college
+wget http://ctcl.org/hiram-college
+wget http://ctcl.org/hope-college
+wget http://ctcl.org/juniata-college
+wget http://ctcl.org/kalamazoo-college
+wget http://ctcl.org/knox-college
+wget http://ctcl.org/lawrence-university
+wget http://ctcl.org/lynchburg-college
+wget http://ctcl.org/marlboro-college
+wget http://ctcl.org/mcdaniel-college
+wget http://ctcl.org/millsaps-college
+wget http://ctcl.org/new-college-of-florida
+wget http://ctcl.org/ohio-wesleyan-university
+wget http://ctcl.org/reed-college
+wget http://ctcl.org/rhodes-college
+wget http://ctcl.org/southwestern-university
+wget http://ctcl.org/st-johns-college
+wget http://ctcl.org/saint-marys-college-california
+wget http://ctcl.org/st-olaf-college
+wget http://ctcl.org/university-of-puget-sound
+wget http://ctcl.org/ursinus-college
+wget http://ctcl.org/wabash-college
+wget http://ctcl.org/wheaton-college-illinois
+wget http://ctcl.org/whitman-college
+wget http://ctcl.org/willamette-university
+wget http://ctcl.org/college-of-wooster
