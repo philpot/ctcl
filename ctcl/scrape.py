@@ -40,23 +40,17 @@ def scrape(pathname=default_pathname):
     with open(pathname, 'r') as f:
         soup = BeautifulSoup(f, 'html.parser')
         c.soup = soup
-
-    for tab in soup.find_all("div", class_="mks_tab_item"):
-        logging.info("tab={}".format(tab))
-        for nav in tab.find_all("div", class_="nav"):
-            logging.info("nav={}".format(nav))
-            if nav.string == "Contact":
-                logging.info("contact={}".format(nav))
-                children = [k for k in nav.parent.parent.parent.parent.children]
-                c.name = children[1].strip()
-                c.street = children[3].strip()
-                c.city_state_zip = children[5].strip()
-                c.phone = children[7].strip()
-            if nav.string == "Enrollment":
-                logging.info("enrollment={}".format(nav))
-                node = nav
-                c.node = node
-                c.enrollment = node.get_text()
+    return c
+    tab_items = [x for x in soup.find_all("div", class_="mks_tab_item")]
+    (contact, enrollment, tuition, quick) = tab_items
+    contact_children = [x for x in contact.children]
+    logging.info("CC {}".format(contact_children))
+    c.name = contact_children[1].strip()
+    c.street = contact_children[3].strip()
+    c.city_state_zip = contact_children[5].strip()
+    c.phone = contact_children[7].strip()
+    enrollment_children = [x for x in enrollment.children]
+    c.enrollment = enrollment_children
     return c
 
     
